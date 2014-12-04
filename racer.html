@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+  <head>
+    <meta charset="UTF-8">
+    <title>JavaScript Racer</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel= "stylesheet" type="text/css" href="css/rubyracer.css">
+  </head>
+
+  <body>
+    <h1>Welcome to JavaScript Racer!!</h1>
+    <h2>Player 1 is the 'q' key and player 2 is the 'p' key.
+    </h2>
+    <div></div>
+  <table class="racer_table">
+      <tr id="player1_strip">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+      <tr id="player2_strip">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+  </table>
+
+  <div id="status">The winner is <span id="winner"></span>
+    <button id="reset">Play Again?</button>
+  </div>
+
+  </body>
+
+  <script src="javascript/vendor/jquery.js"></script>
+  <script src="javascript/src/player.js"></script>
+  <script src="javascript/src/racer.js"></script>
+
+</html>
