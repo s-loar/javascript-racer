@@ -33,7 +33,7 @@ $( document ).ready(function() {
     if (event.which !== 0) {
       if ( isGameWon() ) {
         // the game is over, so anounce the winner
-        $("#winner").html("The Winner is " + getGameWinner());
+        $("#winner").html( getGameWinner() );
         $("#status").show();
       }
       else {
