@@ -9,6 +9,10 @@ function Game() {
   this.initilize = function() {
   	var playerRow = "";
 
+  	$('.racer_table tbody').empty();
+  	$("#status").hide();
+    $( "body" ).unbind();
+
   	for ( var x = 1; x < 3; x++ ) {
   		playerRow = "<tr id='player" + x + "_strip'>";
   		for ( var i = 0; i < 15; i++ ) {
@@ -17,7 +21,6 @@ function Game() {
   		playerRow += "</tr>";
   		$('.racer_table tbody').append(playerRow);
   	}
-
   };
 	
 	this.isGameWon = function() {
@@ -38,12 +41,9 @@ function Game() {
   	// reset the board for another race
   	player1.reset();
   	player2.reset();
-  	//$("#player1_strip td.active").removeClass("active");
-    //$("#player2_strip td.active").removeClass("active");
-    $('.racer_table tbody').empty();
+
     self.initilize();
-    $("#status").hide();
-    $( "body" ).unbind();
+
   };
 
   this.play = function() {
