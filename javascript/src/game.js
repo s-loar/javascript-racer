@@ -1,5 +1,5 @@
 'use strict';
-
+ 
 function Game() {
 
 	var player1 = new Player('Player1');
