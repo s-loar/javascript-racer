@@ -6,11 +6,10 @@ $( document ).ready(function() {
 
   game.initilize();
   
-  game.play();
+  game.play(); // just bind the key events and we are off
 
   $('#reset').on('click', function( event ){
     game.reset();
-    game.play();
   });
 
   

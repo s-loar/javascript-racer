@@ -11,7 +11,6 @@ function Game() {
 
   	$('.racer_table tbody').empty();
   	$("#status").hide();
-    $( "body" ).unbind();
 
   	for ( var x = 1; x < 3; x++ ) {
   		playerRow = "<tr id='player" + x + "_strip'>";
@@ -21,6 +20,11 @@ function Game() {
   		playerRow += "</tr>";
   		$('.racer_table tbody').append(playerRow);
   	}
+    // set the players into the first position
+    player1.movePlayer();
+    $("#player1_strip td:nth-child(" + player1.getPosition() + ")").addClass("active");
+    player2.movePlayer();
+    $("#player2_strip td:nth-child(" + player2.getPosition() + ")").addClass("active");
   };
 	
 	this.isGameWon = function() {
