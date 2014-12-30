@@ -6,6 +6,8 @@
 This is an improved version of the JavaScript racer from DevBootcamp. The
 challenge is outlined below.
 
+This version includes Sass, Jasmine tests and the JavaScript has been put into classes.
+
 ## Releases
 
 ### Release 0: The Setup
